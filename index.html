@@ -1,35 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KecskeTech</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTinkerer | Bio & Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>KecskeTech</h1>
-    </header>
-    <nav>
-        <a href="#about-me">Rólam</a>
-        <a href="projects.html">Projektek</a>
-        <a href="#social-media">Linkek</a>
-    </nav>
-    <section id="about-me">
-        <h2>Rólam</h2>
-        <p>Write an engaging about me section here. Share your background, interests, and goals.</p>
-        <script src="https://apis.google.com/js/platform.js"></script>
-        <div class="g-ytsubscribe" data-channelid="UCC26hXq4rriqxSrBfGji1tA" data-layout="full" data-theme="default" data-count="default"></div>
-    </section>
-    <section id="social-media">
-        <h2>Linkek</h2>
-        <ul>
-            <li><a href="https://discord.gg/XkKNNpDmqD">Discord</a></li>
-            <li><a href="https://www.youtube.com/@kecsketech">YouTube</a></li>
-            <li><a href="https://www.twitch.tv/kecske_gaming13">Twitch *youtube-on liveolok</a></li>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="glow">//TECH_TINKERER</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="cyberpunk">CODE <span class="gradient-text">• CREATE • STREAM</span></h1>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                </div>
+                <div class="terminal-body">
+                    <p>> Welcome to my digital hub!</p>
+                    <p>> Full-time tech enthusiast</p>
+                    <p>> Streaming weekly on Twitch</p>
+                    <p>> Sharing knowledge on YouTube</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; Kecske</p>
-    </footer>
+
+    <section id="projects" class="projects">
+        <h2>Latest Projects</h2>
+        <div class="project-grid">
+            <!-- Project cards will be added here dynamically -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a href="#" class="social-button youtube"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="#" class="social-button twitch"><i class="fab fa-twitch"></i> Twitch</a>
+            <a href="#" class="social-button github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="social-button twitter"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
