@@ -6,7 +6,7 @@
     <title>KecskeTech</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Alap stílusok a body elemhez */
         body {
@@ -39,23 +39,23 @@
             align-items: center;
         }
         .icon-left i {
-            margin-right: 0.5rem;
+            margin-right: 0.5rem; /* Térköz az ikon és a szöveg között */
         }
 
         /* --- Egyedi CSS a 16:9 képarányhoz (Padding-top trükk) --- */
         .aspect-ratio-16-9 {
-          position: relative; /* Szükséges az abszolút pozicionált gyerek elemhez */
-          width: 100%;       /* Kitölti a szülő szélességét */
+          position: relative;
+          width: 100%;
           padding-top: 56.25%; /* 16:9 arány (9 / 16 * 100%) */
-          height: 0;          /* A magasságot a padding adja */
+          height: 0;
         }
 
         .aspect-ratio-16-9 iframe {
-          position: absolute; /* Abszolút pozicionálás a szülőhöz képest */
+          position: absolute;
           top: 0;
           left: 0;
-          width: 100%;       /* Kitölti a szülő szélességét */
-          height: 100%;      /* Kitölti a szülő magasságát (amit a padding határoz meg) */
+          width: 100%;
+          height: 100%;
         }
         /* --- Egyedi CSS vége --- */
 
@@ -84,39 +84,38 @@
 
         <div class="text-center mb-12">
             <h3 class="text-2xl font-semibold text-gray-300 mb-6 text-gradient">Linkek</h3>
-            <div class="mb-6">
-                <h4 class="text-lg font-semibold text-gray-400 mb-3">Social Media</h4>
-                <div class="flex justify-center flex-wrap gap-4">
-                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
-                        <i class="fab fa-youtube"></i> YouTube
-                    </a>
-                     <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
-                        <i class="fab fa-twitch"></i> Twitch
-                    </a>
-                     <a href="#" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
-                        <i class="fab fa-twitter"></i> X
-                    </a>
-                </div>
-            </div>
-            <div>
-                <h4 class="text-lg font-semibold text-gray-400 mb-3">Egyéb linkek</h4>
-                <div class="flex justify-center flex-wrap gap-4">
-                     <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
-                        <i class="fas fa-link"></i> Egyéb Link 2
-                    </a>
-                    <a href="https://github.com/KecskeTech" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
+            <div class="flex justify-center flex-wrap gap-4 mt-6">
+                 <a href="https://youtube.com/@KecskeTech" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+                 <a href="https://twitch.tv/kecske_gaming13" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
+                    <i class="fab fa-twitch"></i> Twitch
+                </a>
+                 <a href="https://x.com/KecskeGaming" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
+                    <i class="fa-brands fa-x-twitter"></i> X
+                 </a>
+                 <a href="https://discord.gg/kgc2BwszjE" target="_blank" rel="noopener noreferrer" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
+                    <i class="fab fa-discord"></i> Szerver
+                </a>
+                 <a href="https://kecske.win/projektek" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
+                     <i class="fas fa-code"></i> Projektek
+                 </a>
+                 <a href="https://github.com/KecskeTech" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                 <a href="#" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-5 rounded-full transition duration-300 transform hover:scale-110 hover:shadow-lg icon-left">
+                    <i class="fas fa-link"></i> Egyéb Link 2
+                </a>
+                 </div>
         </div>
 
         <div class="bg-gray-800 rounded-lg shadow-md p-6 mb-8 glassmorphism">
             <h3 class="text-2xl font-semibold text-white mb-4 text-gradient">Rólam</h3>
             <p class="text-gray-300 leading-relaxed">
-                [Ide írhatsz egy részletesebb bemutatkozást magadról. Például:
-                Mióta foglalkozol videózással/streameléssel, mik a kedvenc játékaid/témáid,
-                mit szeretnél elérni a csatornáddal, stb. Érdemes lehet több bekezdésre bontani a jobb átláthatóság érdekében.]
+                KecskeTech vagyok, már jó pár éve foglalkozom a gépekkel és tech cuccokkal.
+                A Minecraftot gondolom az egyik legjobb vételnek, hiszen azt csinálok benne amit akarok, senki nem mond meg semmit.
+                A Youtube csatornámra csinálok videókat amiket hasznosnak tartok maganak és a nézők számára.
+                Próbálok a brainrotnál értelmesebb dolgokat átadni a nézőknek.
             </p>
         </div>
 
@@ -142,7 +141,7 @@
             <h3 class="text-2xl font-semibold text-white mb-6 text-gradient text-center">Új Youtube Videó</h3>
             <div class="aspect-ratio-16-9 rounded-lg overflow-hidden shadow-lg">
                  <iframe
-                    class="w-full h-full" /* Ezek az osztályok továbbra is szükségesek lehetnek a CSS szabályhoz */
+                    class="w-full h-full"
                     src="https://www.youtube.com/embed/aIJwjynutt0?si=soo-RU8GA9mcjk9P" /* A felhasználó által megadott link, nem módosítjuk */
                     title="YouTube Lejátszó"
                     frameborder="0"
