@@ -41,9 +41,26 @@
         .icon-left i {
             margin-right: 0.5rem;
         }
-        /* Tailwind aspect-ratio plugin alapból támogatott a v3 CDN-nel, nincs szükség külön configra */
+
+        /* --- Egyedi CSS a 16:9 képarányhoz (Padding-top trükk) --- */
+        .aspect-ratio-16-9 {
+          position: relative; /* Szükséges az abszolút pozicionált gyerek elemhez */
+          width: 100%;       /* Kitölti a szülő szélességét */
+          padding-top: 56.25%; /* 16:9 arány (9 / 16 * 100%) */
+          height: 0;          /* A magasságot a padding adja */
+        }
+
+        .aspect-ratio-16-9 iframe {
+          position: absolute; /* Abszolút pozicionálás a szülőhöz képest */
+          top: 0;
+          left: 0;
+          width: 100%;       /* Kitölti a szülő szélességét */
+          height: 100%;      /* Kitölti a szülő magasságát (amit a padding határoz meg) */
+        }
+        /* --- Egyedi CSS vége --- */
+
     </style>
-    </head>
+</head>
 <body class="bg-opacity-90">
     <header class="bg-gradient text-white py-4 shadow-md sticky top-0 z-10">
         <div class="container mx-auto px-4 flex justify-between items-center">
@@ -123,9 +140,9 @@
 
         <div class="bg-gray-800 rounded-lg shadow-md p-6 mb-8 glassmorphism">
             <h3 class="text-2xl font-semibold text-white mb-6 text-gradient text-center">Új Youtube Videó</h3>
-            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                    class="w-full h-full"
+            <div class="aspect-ratio-16-9 rounded-lg overflow-hidden shadow-lg">
+                 <iframe
+                    class="w-full h-full" /* Ezek az osztályok továbbra is szükségesek lehetnek a CSS szabályhoz */
                     src="https://www.youtube.com/embed/aIJwjynutt0?si=soo-RU8GA9mcjk9P" /* A felhasználó által megadott link, nem módosítjuk */
                     title="YouTube Lejátszó"
                     frameborder="0"
